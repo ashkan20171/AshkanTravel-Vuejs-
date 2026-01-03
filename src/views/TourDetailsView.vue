@@ -8,6 +8,7 @@
       <h1 style="margin: 0 0 10px; font-size: 24px; font-weight: 900;">
         {{ getText(tour, 'title', locale) }}
       </h1>
+
       <p style="margin: 0 0 12px; color:#5b6478;">
         {{ getText(tour, 'city', locale) }} • {{ tour.nights }} {{ locale === 'fa' ? 'شب' : 'nights' }} • ★ {{ tour.rating }}
       </p>
@@ -16,9 +17,10 @@
         <div style="font-weight: 900; margin-bottom: 8px;">
           {{ locale === 'fa' ? 'قیمت:' : 'Price:' }} {{ formatPrice(tour.price, locale) }}
         </div>
+
         <div style="color:#5b6478; line-height:1.9;">
           {{ locale === 'fa'
-            ? 'این صفحه نمونه است. در مرحله بعد توضیحات کامل، گالری تصاویر، امکانات و فرم رزرو را اضافه می‌کنیم.'
+            ? 'این صفحه نمونه است. مرحله بعد توضیحات کامل، گالری تصاویر، امکانات و فرم رزرو را اضافه می‌کنیم.'
             : 'This is a demo page. Next we will add full description, gallery, amenities, and booking form.' }}
         </div>
       </div>

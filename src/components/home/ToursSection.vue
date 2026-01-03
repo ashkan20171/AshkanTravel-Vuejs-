@@ -48,12 +48,14 @@
           </div>
 
           <h3 class="cardTitle">{{ getText(t, 'title', locale) }}</h3>
+
           <p class="cardMeta">
             {{ getText(t, 'city', locale) }} • {{ t.nights }} {{ locale === 'fa' ? 'شب' : 'nights' }}
           </p>
 
           <div class="cardBottom">
             <div class="price">{{ formatPrice(t.price, locale) }}</div>
+
             <RouterLink class="btn" :to="`/tours/${t.id}`">
               {{ $t('tours.actions.details') }}
             </RouterLink>
@@ -79,7 +81,6 @@ const filters = reactive({
 })
 
 const destinations = computed(() => {
-  // مقصدها را بر اساس زبان نمایش می‌دهیم، ولی value را ثابت نگه می‌داریم
   const unique = new Map()
   for (const t of tours) {
     unique.set(t.city_en.toLowerCase(), {
@@ -93,11 +94,9 @@ const destinations = computed(() => {
 const filteredTours = computed(() => {
   return tours.filter((t) => {
     const cityValue = t.city_en.toLowerCase()
-
     const okDestination = filters.destination === 'all' || cityValue === filters.destination
     const okNights = filters.minNights === 0 || t.nights >= filters.minNights
     const okPrice = filters.maxPrice === 0 || t.price <= filters.maxPrice
-
     return okDestination && okNights && okPrice
   })
 })
