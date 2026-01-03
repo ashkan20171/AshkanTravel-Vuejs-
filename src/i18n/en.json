@@ -1,0 +1,72 @@
+{
+  "brand": "AshkanTravel",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "actions": {
+    "switchToEn": "EN",
+    "switchToFa": "FA"
+  },
+  "hero": {
+    "badge": "Special tours & great prices",
+    "title": "Travel faster, safer, and smarter",
+    "desc": "Find the best tours, flights, and stays with AshkanTravel and book with confidence.",
+    "form": {
+      "destination": "Destination",
+      "destinationPlaceholder": "e.g. Istanbul, Dubai, Kish...",
+      "date": "Date",
+      "people": "People",
+      "search": "Search"
+    },
+    "trust": {
+      "tours": "Tours ready to book",
+      "rating": "User rating",
+      "support": "Support"
+    },
+    "card": {
+      "title": "Today’s pick",
+      "subtitle": "Istanbul tour + 4-star hotel + round-trip flight",
+      "pill1": "Fast booking",
+      "pill2": "Best price",
+      "pill3": "24/7 support"
+    }
+  },
+  "services": {
+    "title": "AshkanTravel Services",
+    "subtitle": "Everything you need for a smooth trip",
+    "items": [
+      {
+        "title": "Tour Booking",
+        "desc": "Domestic & international tours with great prices and full support."
+      },
+      {
+        "title": "Hotel Booking",
+        "desc": "Trusted hotels with easy comparison and smart selection."
+      },
+      {
+        "title": "Flights",
+        "desc": "Fast booking for domestic & international flights with flexible options."
+      },
+      {
+        "title": "Visa & Insurance",
+        "desc": "Visa services, travel insurance, and expert consultation."
+      }
+    ]
+  },
+  "tours": {
+    "title": "Featured Tours",
+    "subtitle": "Popular picks to get started",
+    "filters": {
+      "destination": "Destination",
+      "minNights": "Min nights",
+      "maxPrice": "Max price",
+      "all": "All"
+    },
+    "actions": {
+      "viewAll": "View all tours",
+      "details": "Details"
+    }
+  }
+}
