@@ -68,5 +68,21 @@
       "viewAll": "View all tours",
       "details": "Details"
     }
+  },
+  "booking": {
+    "title": "Booking Request",
+    "subtitle": "Fill in your details. We’ll contact you shortly.",
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "email": "Email (optional)",
+    "people": "People",
+    "note": "Notes (optional)",
+    "submit": "Submit request",
+    "success": "Your request was submitted. We’ll contact you soon.",
+    "errors": {
+      "required": "This field is required.",
+      "phone": "Invalid phone number.",
+      "email": "Invalid email."
+    }
   }
 }

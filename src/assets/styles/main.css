@@ -1,0 +1,29 @@
+/* Reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+:root {
+  --container: 1200px;
+  --pad: 16px;
+  --bg: #ffffff;
+  --text: #0b1220;
+  --muted: #5b6478;
+  --border: #eef0f6;
+  --primary: #0a5cff;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad); }
+.page { padding: 18px 0 48px; }
+
+:root[dir="rtl"] body { direction: rtl; }
+:root[dir="ltr"] body { direction: ltr; }

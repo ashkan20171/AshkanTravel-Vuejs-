@@ -103,10 +103,7 @@ const filteredTours = computed(() => {
 </script>
 
 <style scoped>
-.tours {
-  padding: 44px 0;
-  background: #fff;
-}
+.tours { padding: 44px 0; background: #fff; }
 
 .head {
   display: flex;
@@ -116,23 +113,13 @@ const filteredTours = computed(() => {
   margin-bottom: 14px;
 }
 
-.title {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 900;
-  color: #0b1220;
-}
-
-.subtitle {
-  margin: 6px 0 0;
-  color: #5b6478;
-  line-height: 1.8;
-}
+.title { margin: 0; font-size: 22px; font-weight: 1000; color: var(--text); }
+.subtitle { margin: 6px 0 0; color: var(--muted); line-height: 1.8; }
 
 .viewAll {
   text-decoration: none;
-  font-weight: 800;
-  color: #0a5cff;
+  font-weight: 900;
+  color: var(--primary);
   padding: 10px 12px;
   border-radius: 12px;
   background: rgba(10, 92, 255, 0.08);
@@ -144,22 +131,13 @@ const filteredTours = computed(() => {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
   padding: 12px;
-  border: 1px solid #eef0f6;
+  border: 1px solid var(--border);
   border-radius: 18px;
   background: #fff;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.label {
-  font-size: 12px;
-  color: #6b7280;
-  font-weight: 700;
-}
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: 12px; color: #6b7280; font-weight: 800; }
 
 .input {
   height: 42px;
@@ -170,79 +148,38 @@ const filteredTours = computed(() => {
   outline: none;
   background: #fff;
 }
+.input:focus { border-color: rgba(10,92,255,0.5); box-shadow: 0 0 0 4px rgba(10,92,255,0.12); }
 
-.input:focus {
-  border-color: rgba(10, 92, 255, 0.5);
-  box-shadow: 0 0 0 4px rgba(10, 92, 255, 0.12);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 
 .card {
-  border: 1px solid #eef0f6;
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 16px;
   background: #fff;
   box-shadow: 0 10px 30px rgba(16, 24, 40, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.card:hover { transform: translateY(-3px); box-shadow: 0 18px 50px rgba(16, 24, 40, 0.08); }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 50px rgba(16, 24, 40, 0.08);
-}
-
-.cardTop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
+.cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 
 .tag {
   font-size: 12px;
-  font-weight: 800;
-  color: #0a5cff;
+  font-weight: 900;
+  color: var(--primary);
   background: rgba(10, 92, 255, 0.08);
   border: 1px solid rgba(10, 92, 255, 0.14);
   padding: 6px 10px;
   border-radius: 999px;
 }
+.rating { font-weight: 1000; color: var(--text); }
 
-.rating {
-  font-weight: 900;
-  color: #0b1220;
-}
+.cardTitle { margin: 0 0 8px; font-size: 14px; font-weight: 1000; color: var(--text); line-height: 1.6; }
+.cardMeta { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
 
-.cardTitle {
-  margin: 0 0 8px;
-  font-size: 14px;
-  font-weight: 900;
-  color: #0b1220;
-  line-height: 1.6;
-}
-
-.cardMeta {
-  margin: 0 0 12px;
-  color: #5b6478;
-  font-size: 13px;
-}
-
-.cardBottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.price {
-  font-weight: 900;
-  color: #0b1220;
-}
+.cardBottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.price { font-weight: 1000; color: var(--text); }
 
 .btn {
   text-decoration: none;
@@ -252,27 +189,15 @@ const filteredTours = computed(() => {
   height: 38px;
   padding: 0 12px;
   border-radius: 12px;
-  background: #0a5cff;
+  background: var(--primary);
   color: #fff;
-  font-weight: 900;
+  font-weight: 1000;
 }
-
-.btn:hover {
-  filter: brightness(0.95);
-}
+.btn:hover { filter: brightness(0.95); }
 
 @media (max-width: 980px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .filters {
-    grid-template-columns: 1fr;
-  }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .filters { grid-template-columns: 1fr; }
 }
-
-@media (max-width: 520px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
 </style>

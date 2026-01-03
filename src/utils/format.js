@@ -1,11 +1,8 @@
 export const formatPrice = (value, locale) => {
   const n = Number(value) || 0
+  if (locale === 'fa') return `${n.toLocaleString('fa-IR')} تومان`
 
-  if (locale === 'fa') {
-    return `${n.toLocaleString('fa-IR')} تومان`
-  }
-
-  // نمایش تقریبی برای نسخه دمو
+  // demo conversion
   const usd = Math.max(1, Math.round(n / 60000))
   return `$${usd.toLocaleString('en-US')}`
 }

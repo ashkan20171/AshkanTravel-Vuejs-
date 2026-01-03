@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <ToursSection />
-  </div>
+  <ToursSection />
 </template>
 
 <script setup>
