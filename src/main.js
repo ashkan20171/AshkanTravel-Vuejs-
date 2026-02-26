@@ -1,7 +1,18 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
+import reveal from '@/directives/reveal'
 import '@/assets/styles/main.css'
+import { applyTheme, getInitialTheme } from '@/utils/theme'
 
-createApp(App).use(router).use(i18n).mount('#app')
+// Apply saved / preferred theme ASAP
+applyTheme(getInitialTheme())
+
+const app = createApp(App)
+app.use(createPinia())
+app.use(router)
+app.use(i18n)
+app.directive('reveal', reveal)
+app.mount('#app')

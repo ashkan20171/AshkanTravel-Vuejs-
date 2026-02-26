@@ -1,0 +1,185 @@
+/*
+  Design system
+
+  رنگ‌ها (روانشناسی):
+  - آبی: اعتماد/امنیت (Primary)
+  - سبز-آبی: آرامش/طبیعت (Secondary)
+  - کهربایی: انرژی/دعوت به اقدام (Accent)
+
+  نکته: همه رنگ‌ها با کنتراست مناسب و Focus Ring برای دسترس‌پذیری تنظیم شده‌اند.
+*/
+
+/* Reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+:root {
+  --container: 1200px;
+  --pad: 16px;
+
+  /* Radii */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-xl: 22px;
+
+  /* Shadows */
+  --shadow-sm: 0 10px 30px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 18px 60px rgba(16, 24, 40, 0.08);
+
+  /* Light theme */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #0b1220;
+  --muted: #5b6478;
+  --border: #eef0f6;
+
+  --primary: #0a5cff;
+  --primary-weak: rgba(10, 92, 255, 0.10);
+
+  --secondary: #00b478;
+  --secondary-weak: rgba(0, 180, 120, 0.12);
+
+  --accent: #f59e0b; /* کهربایی */
+  --accent-weak: rgba(245, 158, 11, 0.14);
+
+  --danger: #b42318;
+  --ring: rgba(10, 92, 255, 0.18);
+}
+
+/* Dark theme */
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #0f172a;
+  --text: #e5e7eb;
+  --muted: #a7b0c0;
+  --border: rgba(255, 255, 255, 0.10);
+
+  --primary: #7aa2ff;
+  --primary-weak: rgba(122, 162, 255, 0.16);
+
+  --secondary: #56e2b8;
+  --secondary-weak: rgba(86, 226, 184, 0.14);
+
+  --accent: #fbbf24;
+  --accent-weak: rgba(251, 191, 36, 0.18);
+
+  --danger: #ff6b6b;
+  --ring: rgba(122, 162, 255, 0.22);
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad); }
+.page { padding: 18px 0 56px; }
+
+:root[dir="rtl"] body { direction: rtl; }
+:root[dir="ltr"] body { direction: ltr; }
+
+/* Accessible focus */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+/* Reusable UI */
+.ui-card {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.ui-input {
+  height: 42px;
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  border-radius: var(--r-md);
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.ui-textarea {
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.ui-input::placeholder { color: color-mix(in srgb, var(--muted) 70%, transparent); }
+.ui-input:focus, .ui-textarea:focus { border-color: color-mix(in srgb, var(--primary) 55%, transparent); }
+
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: var(--r-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  user-select: none;
+}
+
+.ui-btn--primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.ui-btn--primary:hover { filter: brightness(0.96); }
+
+.ui-btn--ghost {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--border) 70%, transparent);
+  color: var(--text);
+}
+
+.ui-btn--ghost:hover { background: color-mix(in srgb, var(--primary-weak) 60%, transparent); }
+
+.ui-badge {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--primary);
+  background: var(--primary-weak);
+  border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.ui-section-title { margin: 0; font-size: 22px; font-weight: 1000; color: var(--text); }
+.ui-section-subtitle { margin: 6px 0 0; color: var(--muted); line-height: 1.8; }
+
+/* Skip link (A11y) */
+.skip-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 12px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transform: translateY(-120%);
+}
+.skip-link:focus { transform: translateY(0); }

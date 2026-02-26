@@ -2,12 +2,26 @@
   "brand": "AshkanTravel",
   "menu": {
     "home": "Home",
+    "tours": "Tours",
+    "favorites": "Favorites",
     "about": "About",
     "contact": "Contact"
   },
   "actions": {
     "switchToEn": "EN",
-    "switchToFa": "FA"
+    "switchToFa": "FA",
+    "dark": "Dark",
+    "light": "Light",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "exploreTours": "Explore tours",
+    "watchVideo": "Watch video",
+    "watchTrailer": "Trailer (MP4)"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "toggleMenu": "Toggle menu"
   },
   "hero": {
     "badge": "Special tours & great prices",
@@ -83,6 +97,138 @@
       "required": "This field is required.",
       "phone": "Invalid phone number.",
       "email": "Invalid email."
+    }
+  },
+  "pager": {
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "toursPage": {
+    "title": "All Tours",
+    "desc": "Search, filter, sort, and save favorites.",
+    "filters": {
+      "search": "Search",
+      "searchPh": "City/country/title...",
+      "category": "Category",
+      "nights": "Min nights",
+      "sort": "Sort",
+      "maxPrice": "Max price",
+      "onlyAvailable": "Only available",
+      "reset": "Reset",
+      "all": "All",
+      "any": "Any",
+      "city": "City",
+      "beach": "Beach",
+      "luxury": "Luxury"
+    },
+    "sort": {
+      "popular": "Recommended",
+      "priceAsc": "Cheaper",
+      "priceDesc": "Pricier",
+      "rating": "Rating"
+    },
+    "summary": "{n} tours found",
+    "empty": "No tours match these filters."
+  },
+  "favorites": {
+    "title": "Favorites",
+    "desc": "Your saved tours live here.",
+    "empty": "You haven't saved any tours yet.",
+    "cta": "Browse tours",
+    "clear": "Clear all",
+    "add": "Add to favorites",
+    "remove": "Remove from favorites"
+  },
+  "footer": {
+    "desc": "Book tours with a fast, beautiful, and reliable experience.",
+    "links": "Links",
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Get deals and new offers.",
+      "placeholder": "Your email",
+      "cta": "Join"
+    },
+    "madeWith": "Built with Vue + love"
+  },
+  "seo": {
+    "home": {
+      "title": "Home",
+      "desc": "AshkanTravel: search, compare and book tours."
+    },
+    "tours": {
+      "title": "Tours",
+      "desc": "Tours list with filters, sorting and favorites."
+    },
+    "tour": {
+      "title": "Tour details",
+      "desc": "Tour info, itinerary and booking."
+    },
+    "favorites": {
+      "title": "Favorites",
+      "desc": "Saved tours for later booking."
+    },
+    "about": {
+      "title": "About",
+      "desc": "About AshkanTravel and our values."
+    },
+    "contact": {
+      "title": "Contact",
+      "desc": "Contact details and message form."
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "desc": "AshkanTravel helps you book tours, flights, and hotels with speed and confidence — with clear options and reliable support."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "desc": "Reach out for consultation, partnership, or tour booking.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send message",
+        "success": "Your message has been sent. We'll get back to you soon."
+      }
+    }
+  },
+  "home": {
+    "featured": {
+      "badge": "Featured",
+      "title": "Exciting picks you can trust",
+      "subtitle": "Trust + excitement: curated trips with transparent pricing and fast support.",
+      "cta": "Browse tours",
+      "secondaryCta": "Search tours",
+      "aria": "Featured destinations carousel",
+      "dotsAria": "Select slide"
+    },
+    "video": {
+      "badge": "Video",
+      "title": "Feel the trip before you book",
+      "subtitle": "A quick preview of the experience—focused on safe booking and destination excitement.",
+      "b1": "Secure booking & transparent pricing",
+      "b2": "Well-planned itineraries + 24/7 support",
+      "b3": "Top destinations, limited seats",
+      "play": "Play video",
+      "cta": "Book tours",
+      "playAria": "Play promo video",
+      "previewTitle": "AshkanTravel — quick intro",
+      "previewDesc": "Click to see the vibe and details.",
+      "modalTitle": "Promo video"
+    },
+    "videoTitle": "A quick travel teaser",
+    "videoDesc": "Watch a short teaser to feel the vibe—then book with confidence.",
+    "stats": {
+      "support": "24/7 support",
+      "rating": "Customer rating",
+      "travelers": "Happy travelers",
+      "destinations": "Top destinations"
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "Trusted trips with exciting experiences",
+      "subtitle": "A few real reviews from our travelers"
     }
   }
 }

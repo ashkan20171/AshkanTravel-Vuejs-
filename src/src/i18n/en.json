@@ -1,0 +1,173 @@
+{
+  "brand": "AshkanTravel",
+  "menu": {
+    "home": "Home",
+    "tours": "Tours",
+    "favorites": "Favorites",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "actions": {
+    "switchToEn": "EN",
+    "switchToFa": "FA",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "Special tours & great prices",
+    "title": "Travel faster, safer, and smarter",
+    "desc": "Find the best tours, flights, and stays with AshkanTravel and book with confidence.",
+    "form": {
+      "destination": "Destination",
+      "destinationPlaceholder": "e.g. Istanbul, Dubai, Kish...",
+      "date": "Date",
+      "people": "People",
+      "search": "Search"
+    },
+    "trust": {
+      "tours": "Tours ready to book",
+      "rating": "User rating",
+      "support": "Support"
+    },
+    "card": {
+      "title": "Today’s pick",
+      "subtitle": "Istanbul tour + 4-star hotel + round-trip flight",
+      "pill1": "Fast booking",
+      "pill2": "Best price",
+      "pill3": "24/7 support"
+    }
+  },
+  "services": {
+    "title": "AshkanTravel Services",
+    "subtitle": "Everything you need for a smooth trip",
+    "items": [
+      {
+        "title": "Tour Booking",
+        "desc": "Domestic & international tours with great prices and full support."
+      },
+      {
+        "title": "Hotel Booking",
+        "desc": "Trusted hotels with easy comparison and smart selection."
+      },
+      {
+        "title": "Flights",
+        "desc": "Fast booking for domestic & international flights with flexible options."
+      },
+      {
+        "title": "Visa & Insurance",
+        "desc": "Visa services, travel insurance, and expert consultation."
+      }
+    ]
+  },
+  "tours": {
+    "title": "Featured Tours",
+    "subtitle": "Popular picks to get started",
+    "filters": {
+      "destination": "Destination",
+      "minNights": "Min nights",
+      "maxPrice": "Max price",
+      "all": "All"
+    },
+    "actions": {
+      "viewAll": "View all tours",
+      "details": "Details"
+    }
+  },
+  "booking": {
+    "title": "Booking Request",
+    "subtitle": "Fill in your details. We’ll contact you shortly.",
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "email": "Email (optional)",
+    "people": "People",
+    "note": "Notes (optional)",
+    "submit": "Submit request",
+    "success": "Your request was submitted. We’ll contact you soon.",
+    "errors": {
+      "required": "This field is required.",
+      "phone": "Invalid phone number.",
+      "email": "Invalid email."
+    }
+  }
+  ,
+  "pager": {
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "toursPage": {
+    "title": "All Tours",
+    "desc": "Search, filter, sort, and save favorites.",
+    "filters": {
+      "search": "Search",
+      "searchPh": "City/country/title...",
+      "category": "Category",
+      "nights": "Min nights",
+      "sort": "Sort",
+      "maxPrice": "Max price",
+      "onlyAvailable": "Only available",
+      "reset": "Reset",
+      "all": "All",
+      "any": "Any",
+      "city": "City",
+      "beach": "Beach",
+      "luxury": "Luxury"
+    },
+    "sort": {
+      "popular": "Recommended",
+      "priceAsc": "Cheaper",
+      "priceDesc": "Pricier",
+      "rating": "Rating"
+    },
+    "summary": "{n} tours found",
+    "empty": "No tours match these filters."
+  },
+  "favorites": {
+    "title": "Favorites",
+    "desc": "Your saved tours live here.",
+    "empty": "You haven't saved any tours yet.",
+    "cta": "Browse tours",
+    "clear": "Clear all",
+    "add": "Add to favorites",
+    "remove": "Remove from favorites"
+  },
+  "footer": {
+    "desc": "Book tours with a fast, beautiful, and reliable experience.",
+    "links": "Links",
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Get deals and new offers.",
+      "placeholder": "Your email",
+      "cta": "Join"
+    },
+    "madeWith": "Built with Vue + love"
+  },
+  "seo": {
+    "home": { "title": "Home", "desc": "AshkanTravel: search, compare and book tours." },
+    "tours": { "title": "Tours", "desc": "Tours list with filters, sorting and favorites." },
+    "tour": { "title": "Tour details", "desc": "Tour info, itinerary and booking." },
+    "favorites": { "title": "Favorites", "desc": "Saved tours for later booking." },
+    "about": { "title": "About", "desc": "About AshkanTravel and our values." },
+    "contact": { "title": "Contact", "desc": "Contact details and message form." }
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "desc": "AshkanTravel helps you book tours, flights, and hotels with speed and confidence — with clear options and reliable support."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "desc": "Reach out for consultation, partnership, or tour booking.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send message",
+        "success": "Your message has been sent. We'll get back to you soon."
+      }
+    }
+  }
+}

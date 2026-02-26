@@ -1,0 +1,38 @@
+{
+  "name": "ashkantravel",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "pinia": "^2.2.2",
+    "vue": "^3.5.0",
+    "vue-i18n": "^9.14.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.0"
+  },
+  "lint-staged": {
+    "**/*.{js,vue,json,css,md}": [
+      "prettier --write"
+    ],
+    "**/*.{js,vue}": [
+      "eslint --fix"
+    ]
+  }
+}
