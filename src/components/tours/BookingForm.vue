@@ -43,7 +43,7 @@
       </button>
 
       <div v-if="success" class="success" role="status">
-        {{ $t('booking.success') }}
+        {{ locale === 'fa' ? 'اطلاعات بررسی شد. این نسخه نمایشی است و درخواست هنوز برای آژانس ارسال نشده است.' : 'Details validated. This is a demo; no booking request has been sent.' }}
       </div>
     </form>
   </section>
@@ -57,7 +57,7 @@ defineProps({
   tourTitle: { type: String, default: '' }
 })
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const submitting = ref(false)
 const success = ref(false)
 
@@ -115,7 +115,7 @@ const onSubmit = async () => {
   if (!validate()) return
 
   submitting.value = true
-  await new Promise((r) => setTimeout(r, 600))
+  // Demo-only: connect a secure booking API before enabling actual reservations.
   submitting.value = false
   success.value = true
 

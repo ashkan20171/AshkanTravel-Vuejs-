@@ -6,6 +6,7 @@ const AboutView = () => import('@/views/AboutView.vue')
 const ContactView = () => import('@/views/ContactView.vue')
 const ToursView = () => import('@/views/ToursView.vue')
 const TourDetailsView = () => import('@/views/TourDetailsView.vue')
+const NotFoundView = () => import('@/views/NotFoundView.vue')
 const FavoritesView = () => import('@/views/FavoritesView.vue')
 
 const router = createRouter({
@@ -26,7 +27,8 @@ const router = createRouter({
       name: 'favorites',
       component: FavoritesView,
       meta: { titleKey: 'seo.favorites.title', descKey: 'seo.favorites.desc' }
-    }
+    },
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFoundView }
   ],
   scrollBehavior() {
     return { top: 0 }
@@ -41,6 +43,8 @@ router.afterEach((to) => {
   const desc = to.meta?.descKey ? t(to.meta.descKey) : ''
 
   document.title = `${title} | ${brand}`
+  document.documentElement.lang = i18n.global.locale.value
+  document.documentElement.dir = i18n.global.locale.value === 'fa' ? 'rtl' : 'ltr'
 
   if (desc) {
     const meta = document.querySelector('meta[name="description"]')
